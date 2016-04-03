@@ -2,15 +2,15 @@
 
 import urllib
 import urllib2
-import misaka
+from SLACK_URL import *
 
 def makeMsgForm(**kargs):
 	data_values = {
-		'token' : misaka.TOKEN,
+		'token' : TOKEN,
 		'channel' : 'nil',
 		'text' : 'Hello World',
-		'username' : misaka.USER_NAME,
-		'icon_url' : misaka.ICON_URL,
+		'username' : USER_NAME,
+		'icon_url' : ICON_URL,
 		'as_user' : 'false'
 	}
 	for key, word in kargs.iteritems():
